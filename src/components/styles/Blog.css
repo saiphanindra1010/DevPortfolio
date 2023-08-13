@@ -1,0 +1,113 @@
+/* body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.25;
+    background-color: #f4f4f4;
+    color: #2a2a2a;
+    font-weight: 500;
+} */
+.container {
+    max-width: 1700px;
+    margin: 3rem auto;
+    padding: 4rem;
+}
+h1 {
+    text-align: center;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+}
+@media (max-width: 1140px) {
+    .posts {
+        grid-template-columns: repeat(2, 1fr);
+   }
+
+}
+@media (max-width: 768px) {
+    .posts {
+        grid-template-columns: repeat(1, 1fr);
+   }
+}
+.post-image {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+.post-image:before, .post-image:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.post-image:before {
+    background-size: cover;
+    background-position: center center;
+    transform: scale(1);
+    filter: blur(0);
+    transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+}
+.post-image:after {
+    background: linear-gradient(30deg, #042a4f 0%, #e65891 100%);
+    background-size: 100% 300%;
+    background-position: bottom left;
+    opacity: 0.15;
+    transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+}
+.post-image--1:before {
+    background-image: url('https://images.unsplash.com/photo-1510951459752-aac634df6e86?h=240&ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=50bdf8b5068e794a82c849cc7e269ed3');
+}
+
+.post-content {
+    margin: -3rem 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+    transition: margin 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+.post-inside {
+    overflow: hidden;
+    height: 4.85rem;
+    transition: height 0.2s ease-in-out;
+}
+.post-title {
+    font-size: 1.35rem;
+    line-height: 1;
+    margin: 0 0 1rem;
+    font-weight: 300;
+    color: #042a4f;
+}
+.post-excerpt {
+    overflow: hidden;
+    margin: 0;
+    max-height: 6.25rem;
+    position: relative;
+}
+.post-button {
+    margin-top: 1rem;
+}
+/* ====== HOVER ====== */
+.post:hover .post-content {
+    margin-top: -9.8rem;
+}
+.post:hover .post-inside {
+    height: 11.65rem;
+}
+.post:hover .post-image:after {
+    opacity: 0.5;
+}
+.post:hover .post-image:before {
+    transform: scale(1.1);
+    filter: blur(10px);
+}
