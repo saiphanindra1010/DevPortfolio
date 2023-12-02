@@ -5,7 +5,7 @@ export const Notfoundpage = () => {
   return (
     <div className='container'>
 <h1>
-    404 oops
+    404 oop's
 </h1>
 <p>page not found</p>
 <button type="button" className="button-35 btnactive filter-control" >Go to Home</button>
