@@ -9,37 +9,36 @@ export const Navbar = () => {
 const [click,setClick]=useState(false);
 const handleClick=()=>
 {
-  console.log("Clicked!");
+  // console.log("Clicked!");
   setClick(!click);
 }
 // const handleClick = () => {
 //   console.log("Button clicked!");
 // };
 return (
-    <div className="header">
-      <Link to="/">
-        <h1>Pef</h1>
+    <div className={click?"header active":"header"}>
+      <Link  to="/">
+        <h1 className="logo_top">Sai Phanindra</h1>
       </Link>
-      
       <ul className={click?"nav-menu active":"nav-menu"}>
         <li>
           <Link to="/">
-            <h1>Home</h1>
+            <h1 className="anc">Home</h1>
           </Link>
         </li>
         <li>
           <Link to="/projects">
-            <h1>Projects</h1>
+            <h1 className="anc">Projects</h1>
           </Link>
         </li>
         <li>
-          <Link target="_blank" to="/blogs">
-            <h1>Blog</h1>
+        <Link to="/blogs">
+            <h1 className="anc" >Blog</h1>
           </Link>
         </li>
         <li>
           <Link to="/contacts">
-            <h1>Contact</h1>
+            <h1 className="anc">Contact</h1>
           </Link>
         </li>
       </ul>

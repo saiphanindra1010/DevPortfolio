@@ -1,12 +1,23 @@
-*{
+/* @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600&display=swap');
+ */
+ 
+ /* @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Changa:wght@500&family=Montserrat:wght@200&display=swap'); */
+
+ @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Changa:wght@500&family=Montserrat:wght@200;400;500&display=swap');
+
+ *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+/* font-family: 'Tektur', cursive; */
+/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+font-family: 'Barlow', sans-serif;
+font-family: 'Changa', sans-serif;
+font-family: 'Montserrat', sans-serif; 
 }
 body {
   background-color: #fffefe;
+  overflow-x: hidden;
 }
 
 h1,h4,p,a{
@@ -28,6 +39,7 @@ ul{
   color: #000;
   cursor: pointer;
   border: 3px solid;
+  background-color: #fffefe;;
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
   position: relative;
@@ -50,22 +62,22 @@ ul{
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
-  /* * {
+  * {
     scrollbar-width: auto;
     scrollbar-color: #212121 #ffffff;
-  } */
+  }
 
-  /* Chrome, Edge, and Safari */
-  /* *::-webkit-scrollbar {
+
+  *::-webkit-scrollbar {
     width: 13px;
-  } */
+  }
 
-  /* *::-webkit-scrollbar-track {
+  *::-webkit-scrollbar-track {
     background: #ffffff;
-  } */
+  }
 
-  /* *::-webkit-scrollbar-thumb {
+  *::-webkit-scrollbar-thumb {
     background-color: #212121;
     border-radius: 10px;
     border: 3px solid #ffffff;
-  } */
+  }

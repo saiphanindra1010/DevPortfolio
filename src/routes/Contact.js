@@ -1,8 +1,13 @@
 import React from 'react'
+import { Navbar} from '../components/Navbar'
+import {Contactform} from '../components/Contactform'
 
-const Contact = () => {
+export const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>    
+      <Navbar/>
+      <Contactform/>
+    </div>
   )
 }
 
