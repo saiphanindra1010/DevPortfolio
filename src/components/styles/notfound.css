@@ -1,4 +1,15 @@
 .not
 {
-    color:red
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+}
+.txt
+{
+    padding: 30px;
 }

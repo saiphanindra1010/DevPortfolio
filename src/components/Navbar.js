@@ -18,7 +18,7 @@ const handleClick=()=>
 return (
     <div className={click?"header active":"header"}>
       <Link  to="/">
-        <h1 className="logo_top">Sai Phanindra</h1>
+        <h1 className="logo_top">SP</h1>
       </Link>
       <ul className={click?"nav-menu active":"nav-menu"}>
         <li>

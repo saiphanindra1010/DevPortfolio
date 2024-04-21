@@ -62,7 +62,7 @@ ul{
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
-  * {
+  /* * {
     scrollbar-width: auto;
     scrollbar-color: #212121 #ffffff;
   }
@@ -80,4 +80,20 @@ ul{
     background-color: #212121;
     border-radius: 10px;
     border: 3px solid #ffffff;
-  }
+  } */
+  /*! Firefox */    
+/* html{
+  scrollbar-color: #000000 #e6e6e6;
+} */
+
+/*  */
+/* Style the scrollbar background */
+::-webkit-scrollbar {
+  background: rgb(223, 223, 223);
+  scrollbar-width:thin;
+}
+
+/* Style the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(25, 25, 25);
+}

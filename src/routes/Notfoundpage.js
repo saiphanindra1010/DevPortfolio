@@ -1,14 +1,20 @@
 import React from 'react'
-import Sketch from "react-p5";
+
+import { Link } from "react-router-dom"
 import "../components/styles/notfound.css";
 export const Notfoundpage = () => {
   return (
-    <div className='container'>
+    <div className='not'>
 <h1>
-    404 oops
+    404 oops !!
 </h1>
-<p>page not found</p>
-<button type="button" className="button-35 btnactive filter-control" >Go to Home</button>
+<div className='txt'>
+<p>page not found 🔍</p>
+</div>
+
+<Link  to="/">
+        <h1 className="button-35 btnactive filter-control">Go back to Home</h1>
+      </Link>
 </div>
   )
 }

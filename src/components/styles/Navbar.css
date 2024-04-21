@@ -50,9 +50,7 @@ text-underline-offset: 8px;
     margin: 0;
     padding: 0 30px;
     list-style-type: none;
-    li:not(:last-child) {
-      margin-right: 40px;
-    }
+
     li {
       border: 2px solid transparent;
       border-radius: 5px;
@@ -87,10 +85,7 @@ text-underline-offset: 8px;
         }
       }
       &:hover {
-        background: #EC4138;
-        border: 2px solid #F05749;
-        border-right: 2px solid #E02A21;
-        border-bottom: 2px solid #E02A21;
+    
         
         a {
           color: #F9F8FD;
@@ -128,7 +123,7 @@ text-underline-offset: 8px;
   display: none;
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:820px){
   .nav-menu
   {
     flex-direction: column;
@@ -141,8 +136,6 @@ text-underline-offset: 8px;
     border: none;
     z-index:3;
     left: -100%;
-
-
   }
   .nav-menu.active
   {
