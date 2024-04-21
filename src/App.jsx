@@ -8,7 +8,7 @@ import Contact from "./routes/Contact";
 import { Blog } from "./routes/Blog";
 import { Route, Routes } from "react-router-dom";
 import { Notfoundpage } from "./routes/Notfoundpage";
-
+// import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   return (
