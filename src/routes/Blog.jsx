@@ -9,7 +9,8 @@ export const Blog = () => {
     cache: new InMemoryCache(), 
   });
 
-  return (
+  return ( 
+    
     <div>
         <Navbar/>   
         <ApolloProvider client={client}>
