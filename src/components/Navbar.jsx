@@ -7,6 +7,7 @@ import {FaBars,FaTimes} from "react-icons/fa"
 export const Navbar = () => {
 
 const [click,setClick]=useState(false);
+
 const handleClick=()=>
 {
   // console.log("Clicked!");

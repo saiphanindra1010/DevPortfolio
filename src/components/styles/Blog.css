@@ -11,6 +11,10 @@ body {
     padding: 1rem;
     
 }
+.filter-control
+{
+margin: 0.18rem;
+}
 h1 {
     text-align: center;
 }
@@ -181,10 +185,10 @@ h1 {
     color: #fff;
     background-color: #1c1d1e;
 }
-/* .btnactive {
+.btnactive {
     color: #fff;
-    background-color: #000000;
-  } */
+    background-color: #1c1d1e;
+  }
   
 
 

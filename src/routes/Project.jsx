@@ -7,6 +7,7 @@ const Project = () => {
     <div> 
        <Navbar/>   
       <Projectgrid/>
+
         </div>
   )
 }

@@ -7,13 +7,13 @@ import "./styles/Skills.css";
 export const Skills = () => {
   return (
     <>
-      <section id="stack" class="stack">
-        <h2 class="section-title" >Skills</h2>
-        <div  class="sec">
+      <section id="stack" className="stack">
+        <h2 className="section-title" >Skills</h2>
+        <div  className="sec">
         <div>
-          <h3 class="section-title1">Languages</h3>
-          <div class="stack-container">
-            <div class="tech-container">
+          <h3 className="section-title1">Languages</h3>
+          <div className="stack-container">
+            <div className="tech-container">
               <Tooltip title="Java" placement="bottom" color="rgb(28,28,28)">
                 <img
                   src={Javaimg} width="50"
@@ -31,16 +31,16 @@ export const Skills = () => {
           </div>
         </div>
         <div>
-          <h3 class="section-title1">Backend</h3>
-          <div class="stack-container">
-            <div class="tech-container">
+          <h3 className="section-title1">Backend</h3>
+          <div className="stack-container">
+            <div className="tech-container">
             </div>
           </div>
         </div>
         <div>
-          <h3 class="section-title1">Framworks and libraye</h3>
-          <div class="stack-container">
-            <div class="tech-container">
+          <h3 className="section-title1">Framworks and libraye</h3>
+          <div className="stack-container">
+            <div className="tech-container">
             
             <Tooltip title="React" placement="bottom" color="rgb(28,28,28)">
                 <img
