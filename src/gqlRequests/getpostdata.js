@@ -1,23 +1,11 @@
 import { gql } from "@apollo/client";
+const env = import.meta.env;
+const host=env.VITE_REACT_APP_BLog
+// const host=process.env.REACT_APP_BLog
 
-// export const GET_ALL_POSTS = gql`
-//   {
-//     user(username: "saiphanindra") {
-//       publication {
-//         posts(page: 0) {
-//           slug
-//           title
-//           brief
-//           coverImage
-//         }
-//       }
-//     }
-//   }
-// `;
-
-export const GET_SQL_POSTS = gql`
+const FILTER_POSTS = gql`
   query Publication($filter: String!) {
-    publication(host: "saiphanindra.hashnode.dev") {
+    publication(host: "${host}") {
       series(slug: $filter) {
         posts(first: 20) {
           edges {
@@ -35,30 +23,9 @@ export const GET_SQL_POSTS = gql`
     }
   }
 `;
-export const GET_GIT_POSTS = gql`
-  query Publication {
-    publication(host: "saiphanindra.hashnode.dev") {
-      series(slug: "git") {
-        posts(first: 20) {
-          edges {
-            node {
-              title
-              slug
-              brief
-              coverImage {
-                url
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
-export const GET_ALL_POSTS = gql`
+const GET_ALL_POSTS = gql`
 query Publication {
-  publication(host: "saiphanindra.hashnode.dev") {
-
+  publication(host: "${host}") {
       posts(first: 20) {
         edges {
           node {
@@ -75,3 +42,9 @@ query Publication {
   }
 }
 `;
+
+export {
+  GET_ALL_POSTS,
+  FILTER_POSTS,
+  host
+}

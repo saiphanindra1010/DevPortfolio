@@ -30,6 +30,11 @@
 text-decoration: underline;
 text-underline-offset: 8px;
 }
+.active
+{
+text-decoration: underline;
+text-underline-offset: 8px;
+}
 .nav-menu {
     position: absolute;
     top: 15px;

@@ -1,11 +1,16 @@
 .footer {
-  /* margin:20px;  */
-  position: static;
-  left: 0;
+  background-color: #1d1d1d; 
+  color: #fff; 
+  padding: 10px; 
+  text-align: center;
+/* position: fixed; */
+  margin-top: 20px;
+  left: 0; 
   bottom: 0;
-  width: 100%;
-  /* padding:30%; */
-  margin:10%;
-  /* color: white; */
-  text-align:center
+  width: 100%; 
 }
+
+.footer_text {
+  font-size: 14px;
+}
+
