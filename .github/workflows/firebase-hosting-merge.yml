@@ -11,7 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+      - name: Install dependencies and build
+        env: 
+          REACT_APP_BLog_user_name: ${{ secrets.REACT_APP_BLog_user_name }}
+          VITE_REACT_APP_BLog_user_name: ${{ secrets.VITE_REACT_APP_BLOG_USER_NAME }}
+          VITE_REACT_APP_BLog: ${{ secrets.VITE_REACT_APP_BLOG }}
+          VITE_EMAIL_Public_Token: ${{ secrets.VITE_EMAIL_PUBLIC_TOKEN }}
+        run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
