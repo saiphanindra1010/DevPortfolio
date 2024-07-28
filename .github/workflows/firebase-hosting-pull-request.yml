@@ -15,6 +15,11 @@ jobs:
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
+      env: 
+          REACT_APP_BLog_user_name: ${{ secrets.REACT_APP_BLog_user_name}}
+          VITE_REACT_APP_BLog_user_name: ${{ VITE_REACT_APP_BLOG_USER_NAME}}
+          VITE_REACT_APP_BLog: ${{VITE_REACT_APP_BLOG}}
+          VITE_EMAIL_Public_Token: ${{VITE_EMAIL_PUBLIC_TOKEN}}
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SAI_PHANINDRA }}
